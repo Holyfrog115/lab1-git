@@ -10,6 +10,12 @@ double kmToMiles(double km)
     return km * 0.621371;
 }
 
+// Перевод мили -> километры
+double milesToKm(double mi)
+{
+    return mi * 1.609344;
+}
+
 // ===== Главная функция: меню =====
 int main()
 {
@@ -19,6 +25,7 @@ int main()
     {
         cout << "\n=== Вариант 63: Конвертер величин мили <-> километры ===\n";
         cout << "1. Километры -> Мили\n";
+        cout << "2. Мили -> Километры\n";
         cout << "0. Выход\n";
         cout << "Выберите пункт: ";
         cin >> choice;
@@ -28,6 +35,11 @@ int main()
             cout << "Введите километры: ";
             cin >> a;
             cout << "Мили = " << kmToMiles(a) << "\n";
+            break;
+        case 2:
+            cout << "Введите мили: ";
+            cin >> a;
+            cout << "Километры = " << milesToKm(a) << "\n";
             break;
         case 0:
             cout << "Работа завершена.\n";
