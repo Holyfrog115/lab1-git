@@ -1,0 +1,40 @@
+// Лабораторная работа № 1. Вариант 63.
+// Выполнил: Конышев Е. Г., группа ПИ-52.
+#include <iostream>
+using namespace std;
+
+// ===== Расчётные функции варианта =====
+// Перевод километры -> мили
+double kmToMiles(double km)
+{
+    return km * 0.621371;
+}
+
+// ===== Главная функция: меню =====
+int main()
+{
+    int choice;
+    double a, b;
+    do
+    {
+        cout << "\n=== Вариант 63: Конвертер величин мили <-> километры ===\n";
+        cout << "1. Километры -> Мили\n";
+        cout << "0. Выход\n";
+        cout << "Выберите пункт: ";
+        cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            cout << "Введите километры: ";
+            cin >> a;
+            cout << "Мили = " << kmToMiles(a) << "\n";
+            break;
+        case 0:
+            cout << "Работа завершена.\n";
+            break;
+        default:
+            cout << "Такого пункта нет.\n";
+        }
+    } while (choice != 0);
+    return 0;
+}
