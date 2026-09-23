@@ -34,12 +34,12 @@ int main()
         case 1:
             cout << "Введите километры: ";
             cin >> a;
-            cout << "Мили = " << kmToMiles(a) << "\n";
+            cout << a << " Км = " << kmToMiles(a) << " Миль" << "\n";
             break;
         case 2:
             cout << "Введите мили: ";
             cin >> a;
-            cout << "Километры = " << milesToKm(a) << "\n";
+            cout << a << " Миль = " << milesToKm(a) << " Км" << "\n";
             break;
         case 0:
             cout << "Работа завершена.\n";
